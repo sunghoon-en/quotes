@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Random IIT Motivation Quote</title>
+    <style>
+      body {
+        background: transparent;
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      #quote {
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="quote"></div>
+    <script>
+      const quotes = [
+        "IIT Bombay CS is my destiny.",
+        "Boys = Lallu, IIT = Forever.",
+        "Future ranker: Every problem solved is a step closer to greatness.",
+        "IIT is not just a college; it’s the launchpad of legends.",
+        "Hard work beats talent when talent doesn't work hard.",
+        "In the world of IIT, only the relentless rise.",
+        "Focus, grind, and let your work speak louder than words.",
+        "A true champion studies while others sleep.",
+        "Every day is a step toward IIT Bombay CS glory.",
+        "Your destiny is carved by your discipline. IIT awaits."
+      ];
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote").innerText = quotes[randomIndex];
+    </script>
+  </body>
+</html>
